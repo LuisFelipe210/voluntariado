@@ -2,40 +2,40 @@
 
 ## Objetivo
 
-Desenvolver uma API REST utilizando Node.js para o gerenciamento de atividades de voluntariado[cite: 2]. A API permite que usuários (comuns e administradores) se cadastrem, façam login, visualizem atividades e registrem sua participação[cite: 3]. Utiliza autenticação JWT para controle de acesso [cite: 4] e RocksDB como banco de dados[cite: 4]. O projeto inclui também um front-end simples em JavaScript puro para interação com a API[cite: 5].
+Desenvolver uma API REST utilizando Node.js para o gerenciamento de atividades de voluntariado. A API permite que usuários (comuns e administradores) se cadastrem, façam login, visualizem atividades e registrem sua participação. Utiliza autenticação JWT para controle de acesso e RocksDB como banco de dados. O projeto inclui também um front-end simples em JavaScript puro para interação com a API.
 
 ## Funcionalidades Principais
 
-* **Autenticação:** Cadastro e Login de usuários (comum/admin) com e-mail e senha[cite: 7]. Autenticação baseada em Token JWT[cite: 8].
-* **Controle de Acesso:** Middleware para proteger rotas[cite: 10]. Permissões distintas para usuários comuns e administradores[cite: 6].
+* **Autenticação:** Cadastro e Login de usuários (comum/admin) com e-mail e senha. Autenticação baseada em Token JWT
+* **Controle de Acesso:** Middleware para proteger rotas. Permissões distintas para usuários comuns e administradores.
 * **Usuário Comum:**
-    * Visualizar atividades disponíveis[cite: 12].
-    * Inscrever-se em atividades (com vagas, antes do início)[cite: 12].
-    * Cancelar inscrição (antes do início)[cite: 13].
-    * Visualizar atividades em que está inscrito[cite: 13].
+    * Visualizar atividades disponíveis.
+    * Inscrever-se em atividades (com vagas, antes do início).
+    * Cancelar inscrição (antes do início).
+    * Visualizar atividades em que está inscrito.
 * **Administrador:**
-    * Todas as permissões de usuário comum[cite: 14].
-    * Criar, Editar e Excluir atividades[cite: 14].
-    * (Visualizar participantes acessando detalhes da atividade)[cite: 15].
-* **Gerenciamento de Atividades:** CRUD completo para atividades (título, descrição, data, local, máx. participantes)[cite: 15]. Controle de vagas[cite: 17, 19].
-* **Validação:** Validação manual de dados (sem bibliotecas externas) para e-mail, senha e dados de atividades[cite: 20, 21, 22, 23].
+    * Todas as permissões de usuário comum.
+    * Criar, Editar e Excluir atividades.
+    * (Visualizar participantes acessando detalhes da atividade).
+* **Gerenciamento de Atividades:** CRUD completo para atividades (título, descrição, data, local, máx. participantes). Controle de vagas.
+* **Validação:** Validação manual de dados (sem bibliotecas externas) para e-mail, senha e dados de atividades.
 
 ## Tecnologias Utilizadas
 
 * **Back-end:**
-    * Node.js [cite: 23]
-    * Express.js [cite: 23]
-    * JSON Web Token (jsonwebtoken) [cite: 23]
-    * RocksDB (via pacote `rocksdb` npm) [cite: 24]
+    * Node.js 
+    * Express.js
+    * JSON Web Token (jsonwebtoken) 
+    * RocksDB (via pacote `rocksdb` npm) 
     * bcrypt (para hash de senhas)
-    * dotenv (para variáveis de ambiente) [cite: 25]
+    * dotenv (para variáveis de ambiente)
     * cors (para Cross-Origin Resource Sharing)
 * **Front-end:**
     * HTML5
     * CSS3
-    * JavaScript puro (Vanilla JS) [cite: 24]
+    * JavaScript puro (Vanilla JS)
 * **Banco de Dados:**
-    * RocksDB [cite: 24]
+    * RocksDB 
 * **Desenvolvimento:**
     * nodemon (opcional, para desenvolvimento)
     * concurrently (opcional, para rodar back+front)
@@ -51,7 +51,7 @@ Desenvolver uma API REST utilizando Node.js para o gerenciamento de atividades d
 
 1.  **Clone o Repositório:**
     ```bash
-    git clone <URL_DO_SEU_REPOSITORIO_GITHUB>
+    git clone https://github.com/LuisFelipe210/voluntariado
     cd <nome-da-pasta-do-projeto>
     ```
 
