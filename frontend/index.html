@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Voluntariado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Portal de Atividades de Voluntariado</h1>
+        <nav id="nav-links">
+            </nav>
+    </header>
+
+    <main id="app">
+        <div id="message-area" class="message-area"></div>
+
+        <section id="login-view" class="view active">
+            <h2>Login</h2>
+            <form id="login-form">
+                <div>
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div>
+                    <label for="login-password">Senha:</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit">Entrar</button>
+                <p>Não tem conta? <a href="#" id="show-register-link">Registre-se</a></p>
+            </form>
+        </section>
+
+        <section id="register-view" class="view">
+            <h2>Registro de Novo Usuário</h2>
+            <form id="register-form">
+                <div>
+                    <label for="register-name">Nome:</label>
+                    <input type="text" id="register-name" required>
+                </div>
+                <div>
+                    <label for="register-email">Email:</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div>
+                    <label for="register-password">Senha:</label>
+                    <input type="password" id="register-password" required>
+                    <small>Mínimo 8 caracteres, com letras e números.</small>
+                </div>
+                 <div>
+                    <label for="register-role">Tipo de Conta:</label>
+                    <select id="register-role" required>
+                        <option value="comum" selected>Usuário Comum</option>
+                        <option value="admin">Administrador</option>
+                    </select>
+                 </div>
+                <button type="submit">Registrar</button>
+                <p>Já tem conta? <a href="#" id="show-login-link">Faça Login</a></p>
+            </form>
+        </section>
+
+        <section id="activities-view" class="view">
+            <h2>Atividades Disponíveis</h2>
+            <button id="add-activity-button" class="admin-only" style="display: none;">+ Criar Nova Atividade</button>
+            <div id="activities-list">
+                <p>Carregando atividades...</p>
+            </div>
+        </section>
+
+        <section id="activity-form-view" class="view">
+             <h2 id="activity-form-title">Criar Nova Atividade</h2>
+             <form id="activity-form">
+                 <input type="hidden" id="activity-id"> <div>
+                     <label for="activity-title">Título:</label>
+                     <input type="text" id="activity-title" required>
+                 </div>
+                 <div>
+                     <label for="activity-description">Descrição:</label>
+                     <textarea id="activity-description" required></textarea>
+                 </div>
+                 <div>
+                     <label for="activity-date">Data:</label>
+                     <input type="datetime-local" id="activity-date" required>
+                 </div>
+                 <div>
+                     <label for="activity-location">Local:</label>
+                     <input type="text" id="activity-location" required>
+                 </div>
+                 <div>
+                     <label for="activity-max-participants">Máx. Participantes:</label>
+                     <input type="number" id="activity-max-participants" required min="1">
+                 </div>
+                 <button type="submit">Salvar Atividade</button>
+                 <button type="button" id="cancel-activity-form">Cancelar</button>
+             </form>
+        </section>
+
+        <section id="my-subscriptions-view" class="view">
+            <h2>Minhas Inscrições</h2>
+            <div id="my-subscriptions-list">
+                <p>Carregando inscrições...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Portal de Voluntariado</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+/* frontend/style.css */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+
+nav#nav-links a, nav#nav-links button {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+nav#nav-links button:hover, nav#nav-links a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+
+main#app {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* Views */
+.view {
+    display: none; /* Escondido por padrão */
+    padding: 15px;
+    border-top: 1px solid #eee;
+    margin-top: 15px;
+}
+.view.active {
+    display: block; /* Mostra a view ativa */
+}
+.view h2 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+/* Formulários */
+form div {
+    margin-bottom: 15px;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="datetime-local"],
+form input[type="number"],
+form select,
+form textarea {
+    width: calc(100% - 22px); /* Ajusta padding/border */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+form small {
+    font-size: 0.8em;
+    color: #666;
+}
+form button[type="submit"],
+form button[type="button"],
+section button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 5px;
+}
+form button[type="submit"]:hover,
+section button:hover {
+    background-color: #4cae4c;
+}
+form button[type="button"] {
+    background-color: #ccc;
+    color: #333;
+}
+form button[type="button"]:hover {
+    background-color: #bbb;
+}
+form p {
+    margin-top: 15px;
+}
+form a {
+    color: #337ab7;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Mensagens */
+.message-area {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    display: none; /* Escondida por padrão */
+    text-align: center;
+}
+.message-area.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    display: block;
+}
+.message-area.error {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+    display: block;
+}
+
+/* Lista de Atividades */
+#activities-list .activity-item {
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+#activities-list h3 {
+    margin-top: 0;
+}
+#activities-list p {
+    margin-bottom: 5px;
+}
+.activity-item button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+.activity-item button.unsubscribe-button {
+     background-color: #d9534f;
+}
+.activity-item button.unsubscribe-button:hover {
+     background-color: #c9302c;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    color: #777;
+    font-size: 0.9em;
+}
