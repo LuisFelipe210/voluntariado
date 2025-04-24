@@ -6,7 +6,7 @@ Desenvolver uma API REST utilizando Node.js para o gerenciamento de atividades d
 
 ## Funcionalidades Principais
 
-* **Autenticação:** Cadastro e Login de usuários (comum/admin) com e-mail e senha. Autenticação baseada em Token JWT
+* **Autenticação:** Cadastro e Login de usuários com e-mail e senha. Autenticação baseada em Token JWT
 * **Controle de Acesso:** Middleware para proteger rotas. Permissões distintas para usuários comuns e administradores.
 * **Usuário Comum:**
     * Visualizar atividades disponíveis.
